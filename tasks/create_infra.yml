@@ -11,13 +11,13 @@
   import_role:
     name: "ovirt.infra/roles/ovirt.clusters"
 
-- name: Run hosts sub-role
-  import_role:
-    name: "ovirt.infra/roles/ovirt.hosts"
-
 - name: Run networks sub-role
   import_role:
     name: "ovirt.infra/roles/ovirt.networks"
+
+- name: Run hosts sub-role
+  import_role:
+    name: "ovirt.infra/roles/ovirt.hosts"
 
 - name: Run storages sub-role
   import_role:
